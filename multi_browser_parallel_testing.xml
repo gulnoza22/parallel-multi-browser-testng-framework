@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders Automation Regression Tests" verbose="2"
+parallel="tests">
+
+	<test name="Chrome tests">
+		<parameter name="browser" value="chrome"></parameter>
+		<packages>
+			<package name=".*"></package>
+		</packages>
+	</test>
+	
+	<test name="Firefox tests">
+		<parameter name="browser" value="firefox"></parameter>
+		<packages>
+			<package name=".*"></package>
+		</packages>
+	</test>
+
+</suite>

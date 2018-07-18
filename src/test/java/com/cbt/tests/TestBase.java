@@ -12,6 +12,11 @@ import com.cbt.utilities.Driver;
 public abstract class TestBase {
 
 	protected WebDriver driver;
+	// @prameters  --> means that this method will expect an argument
+	// from the xml file
+	// name of the parameter in the xlm file is browser
+	// @optional --> we use this if we dont want to
+	// provide paramters in xml all the time
 
 	@Parameters("browser")
 	@BeforeMethod
@@ -22,7 +27,7 @@ public abstract class TestBase {
 
 	@AfterMethod
 	public void tearDown() {
-//		Driver.closeDriver();
+		Driver.closeDriver();
 	}
 
 }

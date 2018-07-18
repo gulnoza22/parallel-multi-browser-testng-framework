@@ -2,6 +2,7 @@
 <suite name="WebOrders Automation Regression Tests" verbose="2">
 
 	<test name="Login tests">
+	<parameter name="browser" value="firefox"></parameter>
 		<packages>
 			<package name="com.cbt.tests.login"></package>
 		</packages>

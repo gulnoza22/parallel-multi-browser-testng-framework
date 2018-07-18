@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders Automation Smoke Tests" verbose="2" 
+parallel="tests" thread-count="2">
+
+	<test name="Login tests ">
+		<packages>
+			<package name="com.cbt.tests.login"></package>
+		</packages>
+	</test>
+	
+	<test name="Order tests">
+		<packages>
+			<package name="com.cbt.tests.order"></package>
+		</packages>
+	</test>
+
+</suite>

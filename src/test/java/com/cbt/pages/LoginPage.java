@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.cbt.utilities.BrowserUtils;
 import com.cbt.utilities.Driver;
 
 public class LoginPage {
@@ -28,6 +29,7 @@ public class LoginPage {
 	public void login(String uid, String pwd) {
 		userName.sendKeys(uid);
 		password.sendKeys(pwd);
+		BrowserUtils.waitForClickablility(loginButton, 2);
 		loginButton.click();
 	}
 
