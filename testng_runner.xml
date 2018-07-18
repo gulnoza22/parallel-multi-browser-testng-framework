@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders Automation Regression Tests" verbose="2">
+
+	<test name="Login tests">
+		<packages>
+			<package name="com.cbt.tests.login"></package>
+		</packages>
+	</test>
+
+</suite>
